@@ -1,0 +1,37 @@
+{
+  "name": "sesame",
+  "version": "1.0.0",
+  "description": "An autocomplete search component",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "prebuild": "del lib/",
+    "build": "tsc",
+    "postbuild": "cpy '**/*' '!**/*.ts' ../lib/ --cwd=src/ --no-overwrite --parents"
+  },
+  "author": "George Stefanis",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.33",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cpy-cli": "^3.1.1",
+    "del-cli": "^3.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "react-test-renderer": "^17.0.1",
+    "typescript": "^4.2.3"
+  }
+}

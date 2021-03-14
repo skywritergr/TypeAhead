@@ -1,0 +1,26 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-container ul {
+  list-style-type: none;
+  max-height: 200px;
+  overflow: auto;
+  padding: 0.5rem 0;
+  box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+  position: absolute;
+  top: 1.2rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.search-container ul li:hover,
+.search-container ul li:focus {
+  background-color: blue;
+  opacity: 0.6;
+  color: wheat;
+  cursor: pointer;
+}
